@@ -1,4 +1,4 @@
 Counter : {{count}}
 <br>
 <button type="button" class="btn btn-primary" (click)="increment()">+</button>
-<button type="button" class="btn btn-danger" (click)="decrement()">-</button>
+<button type="button" class="btn btn-danger" [disabled]="count==0" (click)="decrement()">-</button>
