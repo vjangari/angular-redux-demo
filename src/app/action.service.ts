@@ -5,7 +5,7 @@ import { Action } from 'redux';
 export class Actions {
 static INCREMENT = 'INCREMENT';
 static DECREMENT = 'DECREMENT';
-
+static RESET = 'RESET';
   constructor() { }
 
   increment(): Action{
@@ -13,5 +13,8 @@ static DECREMENT = 'DECREMENT';
   }
   decrement(): Action{
     return {type: Actions.DECREMENT};
+  }
+  reset(): Action{
+    return {type: Actions.RESET};
   }
 }
